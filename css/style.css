@@ -169,7 +169,7 @@ header nav a {
 /* ===== ФОН СЕКЦИИ МЕНЮ ===== */
 #menu {
     background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-                url('../img/bg-menu.webp') center/cover fixed no-repeat;
+                url('../img/menu-bg.jpeg') center/cover fixed no-repeat;
     padding-bottom: 4rem;
 }
 
