@@ -9,7 +9,7 @@
 <body>
 
     <header>
-        <h1>Ресторан «Террасааа»</h1>
+        <h1>Ресторан «Терраса»</h1>
         <nav>
             <a href="#menu">Меню</a>
             <a href="#booking">Бронь</a>
@@ -202,10 +202,6 @@
         <form id="booking-form">
     <input type="text" name="name" placeholder="Имя" required>
     <input type="tel" name="phone" placeholder="Телефон" required>
-    <input type="date" name="date" required>
-    <input type="time" name="time" required>
-    
-    <!-- Новое поле -->
     <select name="guests" required>
         <option value="" disabled selected>Количество гостей</option>
         <option value="1">1 гость</option>
@@ -219,9 +215,9 @@
         <option value="9">9 гостей</option>
         <option value="10">10+ гостей</option>
     </select>
-    
+    <input type="date" name="date" required>
+    <input type="time" name="time" required>
     <button type="submit" class="btn">Отправить</button>
-</form>
 </form>
     </section>
 
@@ -237,24 +233,8 @@
     </footer>
 
     <script src="js/script.js"></script>
-    
-    <!-- Модальное окно блюда -->
-<div class="modal" id="dish-modal">
-    <div class="modal-overlay"></div>
-    <div class="modal-content">
-        <button class="modal-close">&times;</button>
-        <img src="" alt="" class="modal-img">
-        <div class="modal-body">
-            <h3 class="modal-title"></h3>
-            <p class="modal-weight"></p>
-            <p class="modal-price"></p>
-            <p class="modal-desc"></p>
-            <div class="modal-ingredients">
-                <h4>Состав:</h4>
-                <ul class="ingredients-list"></ul>
-            </div>
-        </div>
-    </div>
+
+   
 </div>
 </body>
 </html>

@@ -131,6 +131,8 @@ header nav a {
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     transition: transform 0.3s, opacity 0.3s;
     cursor: pointer;
+    
+    
 
 }
 
