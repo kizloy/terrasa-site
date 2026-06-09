@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ресторан «Название»</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Ресторан «Терраса»</h1>
+        <nav>
+            <a href="#menu">Меню</a>
+            <a href="#booking">Бронь</a>
+            <a href="#contacts">Контакты</a>
+            <a href="#events">Акции</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Лучшее место в городе</h2>
+        <p>Вкусные блюда и отличные виды</p>
+        <a href="#booking" class="btn">Забронировать стол</a>
+    </section>
+
+    <section id="menu">
+    <h2>Наше меню</h2>
+    
+    <!-- Табы-категории -->
+    <div class="menu-tabs">
+        <button class="tab-btn active" data-category="all">Все</button>
+        <button class="tab-btn" data-category="cold">Холодные закуски</button>
+        <button class="tab-btn" data-category="hot">Горячие закуски</button>
+        <button class="tab-btn" data-category="soup">Супы</button>
+        <button class="tab-btn" data-category="meat">Шашлык и мясо</button>
+        <button class="tab-btn" data-category="drinks">Напитки</button>
+    </div>
+    
+    <!-- Сетка блюд -->
+    <div class="menu-grid">
+        
+        <!-- Холодные закуски -->
+<div class="menu-item" data-category="cold">
+    <img src="img/menu/tartar.webp" alt="Тартар из говядины">
+    <h3>Тартар из говядины</h3>
+    <p class="weight">220 г</p>
+    <p class="price">1 200 ₽</p>
+</div>
+
+<div class="menu-item" data-category="cold">
+    <img src="img/menu/bruschetta.jpg" alt="Брускетта с томатами">
+    <h3>Брускетта с томатами</h3>
+    <p class="weight">180 г</p>
+    <p class="price">650 ₽</p>
+</div>
+
+<div class="menu-item" data-category="cold">
+    <img src="img/menu/carpaccio.jpg" alt="Карпаччо из лосося">
+    <h3>Карпаччо из лосося</h3>
+    <p class="weight">200 г</p>
+    <p class="price">1 100 ₽</p>
+</div>
+
+<!-- Горячие закуски -->
+<div class="menu-item" data-category="hot">
+    <img src="img/menu/shrimps.jpg" alt="Креветки в соусе">
+    <h3>Креветки в соусе</h3>
+    <p class="weight">250 г</p>
+    <p class="price">890 ₽</p>
+</div>
+
+<div class="menu-item" data-category="hot">
+    <img src="img/menu/julienne.jpg" alt="Жульен с грибами">
+    <h3>Жульен с грибами</h3>
+    <p class="weight">200 г</p>
+    <p class="price">720 ₽</p>
+</div>
+
+<!-- Супы -->
+<div class="menu-item" data-category="soup">
+    <img src="img/menu/borsch.jpg" alt="Борщ с телятиной">
+    <h3>Борщ с телятиной</h3>
+    <p class="weight">350 мл</p>
+    <p class="price">580 ₽</p>
+</div>
+
+<div class="menu-item" data-category="soup">
+    <img src="img/menu/tomyam.jpg" alt="Том Ям с креветками">
+    <h3>Том Ям с креветками</h3>
+    <p class="weight">400 мл</p>
+    <p class="price">750 ₽</p>
+</div>
+
+<div class="menu-item" data-category="soup">
+    <img src="img/menu/cream-soup.jpg" alt="Сливочный суп с грибами">
+    <h3>Сливочный с грибами</h3>
+    <p class="weight">300 мл</p>
+    <p class="price">520 ₽</p>
+</div>
+
+<!-- Шашлык и мясо -->
+<div class="menu-item" data-category="meat">
+    <img src="img/menu/shashlik.jpg" alt="Шашлык из свинины">
+    <h3>Шашлык из свинины</h3>
+    <p class="weight">300 г</p>
+    <p class="price">950 ₽</p>
+</div>
+
+<div class="menu-item" data-category="meat">
+    <img src="img/menu/steak.jpg" alt="Стейк Рибай">
+    <h3>Стейк Рибай</h3>
+    <p class="weight">350 г</p>
+    <p class="price">2 400 ₽</p>
+</div>
+
+<div class="menu-item" data-category="meat">
+    <img src="img/menu/lula.jpg" alt="Люля-кебаб">
+    <h3>Люля-кебаб</h3>
+    <p class="weight">280 г</p>
+    <p class="price">680 ₽</p>
+</div>
+
+<!-- Напитки -->
+<div class="menu-item" data-category="drinks">
+    <img src="img/menu/lemonade.jpg" alt="Лимонад домашний">
+    <h3>Лимонад домашний</h3>
+    <p class="weight">350 мл</p>
+    <p class="price">380 ₽</p>
+</div>
+
+<div class="menu-item" data-category="drinks">
+    <img src="img/menu/mors.jpg" alt="Морс клюквенный">
+    <h3>Морс клюквенный</h3>
+    <p class="weight">400 мл</p>
+    <p class="price">320 ₽</p>
+</div>
+</div>
+<!-- ===== АКЦИИ И АФИША ===== -->
+<section id="events">
+    <h2>Акции и события</h2>
+    
+    <div class="events-grid">
+        
+        <!-- Карточка 1: Акция -->
+        <div class="event-card event-special">
+            <div class="event-badge">Безлимит!</div>
+            <img src="img/events/breakfast.webp" alt="Приятный завтрак">
+            <div class="event-info">
+                <span class="event-tag tag-sale">Акция</span>
+                <h3>Шампанское прилагается!</h3>
+                <p>Безлимитное шампанское к завтраку с 10:00 до 12:00</p>
+                <p class="event-date"> Каждый день</p>
+            </div>
+        </div>
+        
+        <!-- Карточка 2: Афиша -->
+        <div class="event-card event-live">
+            <div class="event-badge">Live</div>
+            <img src="img/events/dj.webp" alt="Живая музыка">
+            <div class="event-info">
+                <span class="event-tag tag-event">Афиша</span>
+                <h3>DJ music</h3>
+                <p>Выступление DJ в стиле Deep House</p>
+                <p class="event-date">📅 Пт–Вс, 21:00–23:00</p>
+            </div>
+        </div>
+        
+        <!-- Карточка 3: Акция -->
+        <div class="event-card event-special">
+            <div class="event-badge">1+1</div>
+            <img src="img/events/special2.jpg" alt="Коктейли 1+1">
+            <div class="event-info">
+                <span class="event-tag tag-sale">Акция</span>
+                <h3>Коктейли 1+1</h3>
+                <p>Закажи любой авторский коктейль — второй в подарок. В баре и на веранде</p>
+                <p class="event-date">📅 Чт–Вс, весь день</p>
+            </div>
+        </div>
+        
+        <!-- Карточка 4: Афиша -->
+        <div class="event-card event-master">
+            <div class="event-badge">Новое</div>
+            <img src="img/events/masterclass.jpg" alt="Мастер-класс">
+            <div class="event-info">
+                <span class="event-tag tag-event">Афиша</span>
+                <h3>Мастер-класс: паста ручной работы</h3>
+                <p>Наш шеф-повар научит готовить настоящую итальянскую пасту. Дегустация включена</p>
+                <p class="event-date">📅 25 июня, 14:00</p>
+                <p class="event-date">💰 2 500 ₽ с гостя</p>
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+</section>
+
+    <section id="booking">
+        <h2>Забронировать стол</h2>
+        <form id="booking-form">
+    <input type="text" name="name" placeholder="Имя" required>
+    <input type="tel" name="phone" placeholder="Телефон" required>
+    <input type="date" name="date" required>
+    <input type="time" name="time" required>
+    
+    <!-- Новое поле -->
+    <select name="guests" required>
+        <option value="" disabled selected>Количество гостей</option>
+        <option value="1">1 гость</option>
+        <option value="2">2 гостя</option>
+        <option value="3">3 гостя</option>
+        <option value="4">4 гостя</option>
+        <option value="5">5 гостей</option>
+        <option value="6">6 гостей</option>
+        <option value="7">7 гостей</option>
+        <option value="8">8 гостей</option>
+        <option value="9">9 гостей</option>
+        <option value="10">10+ гостей</option>
+    </select>
+    
+    <button type="submit" class="btn">Отправить</button>
+</form>
+</form>
+    </section>
+
+    <section id="contacts">
+        <h2>Контакты</h2>
+        <p>Г. Щелково Пролетарский проспект, 10 </p>
+        <p>+7 (999) 123-45-67</p>
+        <div id="map"><!-- карта позже --></div>
+    </section>
+
+    <footer>
+        <p>© 2024 Ресторан «Название»</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
