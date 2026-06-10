@@ -11,132 +11,21 @@
     <header>
         <h1>Ресторан «Терраса»</h1>
         <nav>
-            <a href="#menu">Меню</a>
-            <a href="#booking">Бронь</a>
-            <a href="#contacts">Контакты</a>
             <a href="#events">Акции</a>
+            <a href="#menu">Меню</a>
+            <a href="#contacts">Контакты</a>
+            
         </nav>
     </header>
 
-    <section class="hero">
-        <h2>Лучшее место в городе</h2>
-        <p>Вкусные блюда и отличные виды</p>
-        <a href="#booking" class="btn">Забронировать стол</a>
-    </section>
+   <section class="hero">
+    <h2>Лучшая кухня в городе</h2>
+    <p>Вкусные блюда и отличные виды</p>
+    <a href="tel:+79991234567" class="btn btn-call">📞 +7 (909) 994-02-01</a>
+    <p class="hero-address">г. Щелково, ул. Пролетарский проспект 10</p>
+    <p class="hero-hours">Ежедневно 10:00–23:00</p>
+</section>
 
-    <section id="menu">
-    <h2>Наше меню</h2>
-    
-    <!-- Табы-категории -->
-    <div class="menu-tabs">
-        <button class="tab-btn active" data-category="all">Все</button>
-        <button class="tab-btn" data-category="cold">Холодные закуски</button>
-        <button class="tab-btn" data-category="hot">Горячие закуски</button>
-        <button class="tab-btn" data-category="soup">Супы</button>
-        <button class="tab-btn" data-category="meat">Шашлык и мясо</button>
-        <button class="tab-btn" data-category="drinks">Напитки</button>
-    </div>
-    
-    <!-- Сетка блюд -->
-    <div class="menu-grid">
-    
-    <!-- Холодные закуски -->
-    <div class="menu-item" data-category="cold" data-dish="tartar">
-        <img src="img/tartar.webp" alt="Тартар из говядины" loading="lazy">
-        <h3>Тартар из говядины</h3>
-        <p class="weight">220 г</p>
-        <p class="price">1 200 ₽</p>
-    </div>
-    
-    <div class="menu-item" data-category="cold" data-dish="bruschetta">
-        <img src="img/menu/bruschetta.jpg" alt="Брускетта с томатами" loading="lazy">
-        <h3>Брускетта с томатами</h3>
-        <p class="weight">180 г</p>
-        <p class="price">650 ₽</p>
-    </div>
-
-    <div class="menu-item" data-category="cold" data-dish="carpaccio">
-        <img src="img/menu/carpaccio.jpg" alt="Карпаччо из лосося" loading="lazy">
-        <h3>Карпаччо из лосося</h3>
-        <p class="weight">200 г</p>
-        <p class="price">1 100 ₽</p>
-    </div>
-
-    <!-- Горячие закуски -->
-    <div class="menu-item" data-category="hot" data-dish="shrimps">
-        <img src="img/menu/shrimps.jpg" alt="Креветки в соусе" loading="lazy">
-        <h3>Креветки в соусе</h3>
-        <p class="weight">250 г</p>
-        <p class="price">890 ₽</p>
-    </div>
-    
-    <div class="menu-item" data-category="hot" data-dish="julienne">
-        <img src="img/menu/julienne.jpg" alt="Жульен с грибами" loading="lazy">
-        <h3>Жульен с грибами</h3>
-        <p class="weight">200 г</p>
-        <p class="price">720 ₽</p>
-    </div>
-
-    <!-- Супы -->
-    <div class="menu-item" data-category="soup" data-dish="borsch">
-        <img src="img/menu/borsch.jpg" alt="Борщ с телятиной" loading="lazy">
-        <h3>Борщ с телятиной</h3>
-        <p class="weight">350 мл</p>
-        <p class="price">580 ₽</p>
-    </div>
-    
-    <div class="menu-item" data-category="soup" data-dish="tomyam">
-        <img src="img/menu/tomyam.jpg" alt="Том Ям с креветками" loading="lazy">
-        <h3>Том Ям с креветками</h3>
-        <p class="weight">400 мл</p>
-        <p class="price">750 ₽</p>
-    </div>
-
-    <div class="menu-item" data-category="soup" data-dish="creamSoup">
-        <img src="img/menu/cream-soup.jpg" alt="Сливочный суп с грибами" loading="lazy">
-        <h3>Сливочный с грибами</h3>
-        <p class="weight">300 мл</p>
-        <p class="price">520 ₽</p>
-    </div>
-
-    <!-- Шашлык и мясо -->
-    <div class="menu-item" data-category="meat" data-dish="shashlik">
-        <img src="img/menu/shashlik.jpg" alt="Шашлык из свинины" loading="lazy">
-        <h3>Шашлык из свинины</h3>
-        <p class="weight">300 г</p>
-        <p class="price">950 ₽</p>
-    </div>
-    
-    <div class="menu-item" data-category="meat" data-dish="steak">
-        <img src="img/stake.svg" alt="Стейк Рибай" loading="lazy">
-        <h3>Стейк Рибай</h3>
-        <p class="weight">350 г</p>
-        <p class="price">2 400 ₽</p>
-    </div>
-
-    <div class="menu-item" data-category="meat" data-dish="lula">
-        <img src="img/menu/lula.jpg" alt="Люля-кебаб" loading="lazy">
-        <h3>Люля-кебаб</h3>
-        <p class="weight">280 г</p>
-        <p class="price">680 ₽</p>
-    </div>
-
-    <!-- Напитки -->
-    <div class="menu-item" data-category="drinks" data-dish="lemonade">
-        <img src="img/menu/lemonade.jpg" alt="Лимонад домашний" loading="lazy">
-        <h3>Лимонад домашний</h3>
-        <p class="weight">350 мл</p>
-        <p class="price">380 ₽</p>
-    </div>
-    
-    <div class="menu-item" data-category="drinks" data-dish="mors">
-        <img src="img/menu/mors.jpg" alt="Морс клюквенный" loading="lazy">
-        <h3>Морс клюквенный</h3>
-        <p class="weight">400 мл</p>
-        <p class="price">320 ₽</p>
-    </div>
-    
-</div>
 <!-- ===== АКЦИИ И АФИША ===== -->
 <section id="events">
     <h2>Акции и события</h2>
@@ -185,41 +74,1151 @@
     </div>
 </section>
 
-</section>
+    <section id="menu">
+    <h2>Наше меню</h2>
+    
+    <!-- Табы-категории -->
+    <div class="menu-tabs">
+    <button class="tab-btn active" data-category="all">Все</button>
+    <button class="tab-btn" data-category="breakfast">Завтраки</button>
+    <button class="tab-btn" data-category="salads">Салаты</button>
+    <button class="tab-btn" data-category="sandwiches">Сэндвичи и брускетты</button>
+    <button class="tab-btn" data-category="beer-snacks">Пивные закуски</button>
+    <button class="tab-btn" data-category="company">На компанию</button>
+    <button class="tab-btn" data-category="appetizers">Закуски</button>
+    <button class="tab-btn" data-category="hot-meat">Горячие мясные блюда</button>
+    <button class="tab-btn" data-category="pizza">Пицца</button>
+    <button class="tab-btn" data-category="pasta">Паста / Ризотто</button>
+    <button class="tab-btn" data-category="soups">Супы</button>
+    <button class="tab-btn" data-category="fish">Рыба</button>
+    <button class="tab-btn" data-category="mangal">Мангал</button>
+    <button class="tab-btn" data-category="steaks">Стейки</button>
+    <button class="tab-btn" data-category="kids">Детское меню</button>
+    <button class="tab-btn" data-category="desserts">Десерты</button>
+    <button class="tab-btn" data-category="garnishes">Гарниры</button>
+    <button class="tab-btn" data-category="sauces">Соусы</button>
+    <button class="tab-btn" data-category="soft-drinks">Безалкогольные напитки</button>
+    <button class="tab-btn" data-category="author-tea">Авторский чай</button>
+    <button class="tab-btn" data-category="leaf-tea">Листовой чай</button>
+    <button class="tab-btn" data-category="coffee">Кофе</button>
+    <button class="tab-btn" data-category="milkshakes">Молочные коктейли и смузи</button>
+</div>
+    
+    <!-- Сетка блюд -->
+    <div class="menu-grid">
 
-    <section id="booking">
-        <h2>Забронировать стол</h2>
-        <form id="booking-form">
-    <input type="text" name="name" placeholder="Имя" required>
-    <input type="tel" name="phone" placeholder="Телефон" required>
-    <select name="guests" required>
-        <option value="" disabled selected>Количество гостей</option>
-        <option value="1">1 гость</option>
-        <option value="2">2 гостя</option>
-        <option value="3">3 гостя</option>
-        <option value="4">4 гостя</option>
-        <option value="5">5 гостей</option>
-        <option value="6">6 гостей</option>
-        <option value="7">7 гостей</option>
-        <option value="8">8 гостей</option>
-        <option value="9">9 гостей</option>
-        <option value="10">10+ гостей</option>
-    </select>
-    <input type="date" name="date" required>
-    <input type="time" name="time" required>
-    <button type="submit" class="btn">Отправить</button>
-</form>
-    </section>
+    <!-- ===== ЗАВТРАКИ ===== -->
+    <div class="menu-item" data-category="breakfast">
+        <img src="img/menu/dish.jpg" alt="Оладьи" loading="lazy">
+        <h3>Оладьи из кабачка с лососем гравлакс</h3>
+        <p class="weight">250 г</p>
+        <p class="price">650 ₽</p>
+    </div>
 
+    <div class="menu-item" data-category="breakfast">
+        <img src="img/menu/dish.jpg" alt="Драники" loading="lazy">
+        <h3>Драники из картофеля под грибным жульеном с беконом</h3>
+        <p class="weight">320 г</p>
+        <p class="price">450 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="breakfast">
+        <img src="img/menu/dish.jpg" alt="Английский завтрак" loading="lazy">
+        <h3>Английский завтрак</h3>
+        <p class="weight">400 г</p>
+        <p class="price">700 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="breakfast">
+        <img src="img/menu/dish.jpg" alt="Шакшука" loading="lazy">
+        <h3>Шакшука</h3>
+        <p class="weight">350 г</p>
+        <p class="price">500 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="breakfast">
+        <img src="img/menu/dish.jpg" alt="Сырники" loading="lazy">
+        <h3>Сырники с ягодами и сметаной</h3>
+        <p class="weight">250 г</p>
+        <p class="price">600 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="breakfast">
+        <img src="img/menu/dish.jpg" alt="Каша" loading="lazy">
+        <h3>Каша овсяная с томлёной тыквой</h3>
+        <p class="weight">350 г</p>
+        <p class="price">350 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="breakfast">
+        <img src="img/menu/dish.jpg" alt="Глазунья" loading="lazy">
+        <h3>Глазунья из 2 яиц</h3>
+        <p class="weight">100 г</p>
+        <p class="price">200 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="breakfast">
+        <img src="img/menu/dish.jpg" alt="Омлет" loading="lazy">
+        <h3>Омлет с зелёным салатом и авокадо</h3>
+        <p class="weight">260 г</p>
+        <p class="price">550 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="breakfast">
+        <img src="img/menu/dish.jpg" alt="Дополнения" loading="lazy">
+        <h3>Дополнения: помидоры / сыр / шампиньоны / бекон</h3>
+        <p class="weight">50 г</p>
+        <p class="price">100 ₽</p>
+    </div>
+
+    <!-- ===== САЛАТЫ ===== -->
+    <div class="menu-item" data-category="salads">
+        <img src="img/menu/dish.jpg" alt="Салат с языком" loading="lazy">
+        <h3>Салат с говяжьим языком, икрой из овощей и соусом айоли</h3>
+        <p class="weight">250 г</p>
+        <p class="price">600 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="salads">
+        <img src="img/menu/dish.jpg" alt="Салат с уткой" loading="lazy">
+        <h3>Салат с утиной грудкой, свеклой и козьим сыром</h3>
+        <p class="weight">180 г</p>
+        <p class="price">550 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="salads">
+        <img src="img/menu/dish.jpg" alt="Овощи на мангале" loading="lazy">
+        <h3>Салат из печёных овощей на мангале</h3>
+        <p class="weight">200 г</p>
+        <p class="price">500 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="salads">
+        <img src="img/menu/dish.jpg" alt="Морепродукты" loading="lazy">
+        <h3>Салат с морепродуктами под соусом карри</h3>
+        <p class="weight">180 г</p>
+        <p class="price">700 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="salads">
+        <img src="img/menu/dish.jpg" alt="Оливье" loading="lazy">
+        <h3>Оливье с копчёным лососем</h3>
+        <p class="weight">180 г</p>
+        <p class="price">700 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="salads">
+        <img src="img/menu/dish.jpg" alt="Овощной салат" loading="lazy">
+        <h3>Овощной салат</h3>
+        <p class="weight">210 г</p>
+        <p class="price">450 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="salads">
+        <img src="img/menu/dish.jpg" alt="Ростбиф" loading="lazy">
+        <h3>Салат с ростбифом под медово-горчичным соусом</h3>
+        <p class="weight">210 г</p>
+        <p class="price">700 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="salads">
+        <img src="img/menu/dish.jpg" alt="Цезарь" loading="lazy">
+        <h3>Цезарь с курицей / креветками / лососем</h3>
+        <p class="weight">200 г</p>
+        <p class="price">550 / 650 / 650 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="salads">
+        <img src="img/menu/dish.jpg" alt="Тунец" loading="lazy">
+        <h3>Салат с нежным тунцом под ореховым соусом</h3>
+        <p class="weight">220 г</p>
+        <p class="price">650 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="salads">
+        <img src="img/menu/dish.jpg" alt="Манго" loading="lazy">
+        <h3>Салат с манго и печенью кролика</h3>
+        <p class="weight">180 г</p>
+        <p class="price">600 ₽</p>
+    </div>
+
+    <!-- ===== СЭНДВИЧИ И БРУСКЕТТЫ ===== -->
+    <div class="menu-item" data-category="sandwiches">
+        <img src="img/menu/dish.jpg" alt="Сэндвич" loading="lazy">
+        <h3>Сэндвич с тунцом и жареным беконом</h3>
+        <p class="weight">300 г</p>
+        <p class="price">600 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="sandwiches">
+        <img src="img/menu/dish.jpg" alt="Пинчос" loading="lazy">
+        <h3>Пинчос с ростбифом, лососем, уткой и козьим сыром</h3>
+        <p class="weight">180 г</p>
+        <p class="price">550 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="sandwiches">
+        <img src="img/menu/dish.jpg" alt="Брускетта лосось" loading="lazy">
+        <h3>Брускетта с лососем</h3>
+        <p class="weight">180 г</p>
+        <p class="price">550 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="sandwiches">
+        <img src="img/menu/dish.jpg" alt="Брускетта утка" loading="lazy">
+        <h3>Брускетта с уткой</h3>
+        <p class="weight">180 г</p>
+        <p class="price">550 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="sandwiches">
+        <img src="img/menu/dish.jpg" alt="Панини" loading="lazy">
+        <h3>Панини с подкопчённым ростбифом</h3>
+        <p class="weight">250 г</p>
+        <p class="price">650 ₽</p>
+    </div>
+
+    <!-- ===== ПИВНЫЕ ЗАКУСКИ ===== -->
+    <div class="menu-item" data-category="beer-snacks">
+        <img src="img/menu/dish.jpg" alt="Колбаски" loading="lazy">
+        <h3>Ассорти колбасок с картофелем по-деревенски</h3>
+        <p class="weight">240 г</p>
+        <p class="price">700 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="beer-snacks">
+        <img src="img/menu/dish.jpg" alt="Гренки" loading="lazy">
+        <h3>Гренки чесночные с соусом дор-блю</h3>
+        <p class="weight">150 г</p>
+        <p class="price">350 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="beer-snacks">
+        <img src="img/menu/dish.jpg" alt="Кальмар" loading="lazy">
+        <h3>Кольца кальмара</h3>
+        <p class="weight">150 г</p>
+        <p class="price">550 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="beer-snacks">
+        <img src="img/menu/dish.jpg" alt="Сырные палочки" loading="lazy">
+        <h3>Сырные палочки</h3>
+        <p class="weight">150 г</p>
+        <p class="price">450 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="beer-snacks">
+        <img src="img/menu/dish.jpg" alt="Лук" loading="lazy">
+        <h3>Луковые кольца</h3>
+        <p class="weight">150 г</p>
+        <p class="price">450 ₽</p>
+    </div>
+
+    <!-- ===== НА КОМПАНИЮ ===== -->
+    <div class="menu-item" data-category="company">
+        <img src="img/menu/dish.jpg" alt="Пивная 1" loading="lazy">
+        <h3>Пивная тарелка №1</h3>
+        <p class="weight">1050 г</p>
+        <p class="price">2 700 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="company">
+        <img src="img/menu/dish.jpg" alt="Пивная 2" loading="lazy">
+        <h3>Пивная тарелка №2</h3>
+        <p class="weight">700 г</p>
+        <p class="price">2 200 ₽</p>
+    </div>
+
+    <!-- ===== ЗАКУСКИ ===== -->
+    <div class="menu-item" data-category="appetizers">
+        <img src="img/menu/dish.jpg" alt="Тартар" loading="lazy">
+        <h3>Тар-тар из вырезки молодых бычков</h3>
+        <p class="weight">150 г</p>
+        <p class="price">650 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="appetizers">
+        <img src="img/menu/dish.jpg" alt="Тартар лосось" loading="lazy">
+        <h3>Тар-тар из лосося с манго</h3>
+        <p class="weight">220 г</p>
+        <p class="price">750 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="appetizers">
+        <img src="img/menu/dish.jpg" alt="Карпачо" loading="lazy">
+        <h3>Карпачо из говяжьей вырезки</h3>
+        <p class="weight">180 г</p>
+        <p class="price">700 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="appetizers">
+        <img src="img/menu/dish.jpg" alt="Эклеры" loading="lazy">
+        <h3>Эклеры с паштетом из куриной печени</h3>
+        <p class="weight">180 г</p>
+        <p class="price">650 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="appetizers">
+        <img src="img/menu/dish.jpg" alt="Язык" loading="lazy">
+        <h3>Говяжий язык с хреном и маринованным огурцом</h3>
+        <p class="weight">200 г</p>
+        <p class="price">550 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="appetizers">
+        <img src="img/menu/dish.jpg" alt="Соленья" loading="lazy">
+        <h3>Соленья</h3>
+        <p class="weight">350 г</p>
+        <p class="price">550 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="appetizers">
+        <img src="img/menu/dish.jpg" alt="Мясное плато" loading="lazy">
+        <h3>Плато мясных деликатесов</h3>
+        <p class="weight">200 г</p>
+        <p class="price">900 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="appetizers">
+        <img src="img/menu/dish.jpg" alt="Сырное плато" loading="lazy">
+        <h3>Сырное плато</h3>
+        <p class="weight">200 г</p>
+        <p class="price">900 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="appetizers">
+        <img src="img/menu/dish.jpg" alt="Сало" loading="lazy">
+        <h3>Подкопчённое сало с бородинским хлебом и горчицей</h3>
+        <p class="weight">220 г</p>
+        <p class="price">500 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="appetizers">
+        <img src="img/menu/dish.jpg" alt="Овощное плато" loading="lazy">
+        <h3>Овощное плато</h3>
+        <p class="weight">250 г</p>
+        <p class="price">550 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="appetizers">
+        <img src="img/menu/dish.jpg" alt="Вителло" loading="lazy">
+        <h3>Мраморная говядина под соусом вителло тоннато</h3>
+        <p class="weight">150 г</p>
+        <p class="price">650 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="appetizers">
+        <img src="img/menu/dish.jpg" alt="Мокрель" loading="lazy">
+        <h3>Пряная мокрель с ялтинским луком</h3>
+        <p class="weight">170 г</p>
+        <p class="price">600 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="appetizers">
+        <img src="img/menu/dish.jpg" alt="Лангустины" loading="lazy">
+        <h3>Лангустины под соусом чимичури</h3>
+        <p class="weight">180 г</p>
+        <p class="price">1 200 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="appetizers">
+        <img src="img/menu/dish.jpg" alt="Креветки" loading="lazy">
+        <h3>Креветки темпура</h3>
+        <p class="weight">180 г</p>
+        <p class="price">850 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="appetizers">
+        <img src="img/menu/dish.jpg" alt="Крылья" loading="lazy">
+        <h3>Куриные крылья барбекю</h3>
+        <p class="weight">300 г</p>
+        <p class="price">700 ₽</p>
+    </div>
+
+    <!-- ===== ГОРЯЧИЕ МЯСНЫЕ БЛЮДА ===== -->
+    <div class="menu-item" data-category="hot-meat">
+        <img src="img/menu/dish.jpg" alt="Щёчки" loading="lazy">
+        <h3>Томлёные говяжьи щёчки с сырной палентой</h3>
+        <p class="weight">280 г</p>
+        <p class="price">950 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="hot-meat">
+        <img src="img/menu/dish.jpg" alt="Ягнёнок" loading="lazy">
+        <h3>Тушёная голень ягнёнка с картофельным пюре</h3>
+        <p class="weight">400 г</p>
+        <p class="price">1 600 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="hot-meat">
+        <img src="img/menu/dish.jpg" alt="Язык драник" loading="lazy">
+        <h3>Говяжий язык на дранике под грибным соусом</h3>
+        <p class="weight">300 г</p>
+        <p class="price">750 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="hot-meat">
+        <img src="img/menu/dish.jpg" alt="Медальоны" loading="lazy">
+        <h3>Медальоны пепер с листьями салата</h3>
+        <p class="weight">200 г</p>
+        <p class="price">1 500 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="hot-meat">
+        <img src="img/menu/dish.jpg" alt="Цыпленок" loading="lazy">
+        <h3>Цыпленок гриль с печёным картофелем</h3>
+        <p class="weight">450 г</p>
+        <p class="price">950 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="hot-meat">
+        <img src="img/menu/dish.jpg" alt="Курица карри" loading="lazy">
+        <h3>Куриное бедро карри с рисом жасмин</h3>
+        <p class="weight">320 г</p>
+        <p class="price">700 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="hot-meat">
+        <img src="img/menu/dish.jpg" alt="Баварская" loading="lazy">
+        <h3>Горячая сковорода по-баварски</h3>
+        <p class="weight">350 г</p>
+        <p class="price">950 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="hot-meat">
+        <img src="img/menu/dish.jpg" alt="Свинина" loading="lazy">
+        <h3>Горячая сковорода со свининой и грибами</h3>
+        <p class="weight">350 г</p>
+        <p class="price">750 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="hot-meat">
+        <img src="img/menu/dish.jpg" alt="Рёбра" loading="lazy">
+        <h3>Свиные рёбра в соусе</h3>
+        <p class="weight">300 г</p>
+        <p class="price">950 ₽</p>
+    </div>
+
+        <!-- ===== ПИЦЦА 33 см ===== -->
+    <div class="menu-item" data-category="pizza">
+        <img src="img/menu/dish.jpg" alt="Маргарита" loading="lazy">
+        <h3>Маргарита</h3>
+        <p class="weight">33 см</p>
+        <p class="price">900 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="pizza">
+        <img src="img/menu/dish.jpg" alt="Пепперони" loading="lazy">
+        <h3>Пепперони</h3>
+        <p class="weight">33 см</p>
+        <p class="price">950 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="pizza">
+        <img src="img/menu/dish.jpg" alt="Курица карри" loading="lazy">
+        <h3>С курицей под соусом карри</h3>
+        <p class="weight">33 см</p>
+        <p class="price">1 200 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="pizza">
+        <img src="img/menu/dish.jpg" alt="По-баварски" loading="lazy">
+        <h3>По-баварски</h3>
+        <p class="weight">33 см</p>
+        <p class="price">1 200 ₽</p>
+    </div>
+
+    <!-- ===== ПАСТА / РИЗОТТО ===== -->
+    <div class="menu-item" data-category="pasta">
+        <img src="img/menu/dish.jpg" alt="Карбонара" loading="lazy">
+        <h3>Карбонара</h3>
+        <p class="weight">250 г</p>
+        <p class="price">600 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="pasta">
+        <img src="img/menu/dish.jpg" alt="Тальятелле" loading="lazy">
+        <h3>Тальятелле с морепродуктами</h3>
+        <p class="weight">280 г</p>
+        <p class="price">950 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="pasta">
+        <img src="img/menu/dish.jpg" alt="Паста лосось" loading="lazy">
+        <h3>Паста с брокколи и лососем</h3>
+        <p class="weight">270 г</p>
+        <p class="price">1 200 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="pasta">
+        <img src="img/menu/dish.jpg" alt="Фетучини" loading="lazy">
+        <h3>Фетучини с курицей и белыми грибами</h3>
+        <p class="weight">270 г</p>
+        <p class="price">800 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="pasta">
+        <img src="img/menu/dish.jpg" alt="Ризотто море" loading="lazy">
+        <h3>Ризотто с морепродуктами</h3>
+        <p class="weight">270 г</p>
+        <p class="price">1 200 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="pasta">
+        <img src="img/menu/dish.jpg" alt="Ризотто грибы" loading="lazy">
+        <h3>Ризотто с белыми грибами и страчателлой</h3>
+        <p class="weight">270 г</p>
+        <p class="price">950 ₽</p>
+    </div>
+
+    <!-- ===== СУПЫ ===== -->
+    <div class="menu-item" data-category="soups">
+        <img src="img/menu/dish.jpg" alt="Борщ" loading="lazy">
+        <h3>Борщ с говядиной</h3>
+        <p class="weight">350 мл</p>
+        <p class="price">650 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="soups">
+        <img src="img/menu/dish.jpg" alt="Грибной суп" loading="lazy">
+        <h3>Грибной крем-суп</h3>
+        <p class="weight">350 мл</p>
+        <p class="price">650 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="soups">
+        <img src="img/menu/dish.jpg" alt="Том-ям" loading="lazy">
+        <h3>Том-ям</h3>
+        <p class="weight">400 мл</p>
+        <p class="price">750 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="soups">
+        <img src="img/menu/dish.jpg" alt="Суп копчёности" loading="lazy">
+        <h3>Суп с копчёностями</h3>
+        <p class="weight">350 мл</p>
+        <p class="price">650 ₽</p>
+    </div>
+
+    <!-- ===== РЫБА ===== -->
+    <div class="menu-item" data-category="fish">
+        <img src="img/menu/dish.jpg" alt="Польпетте" loading="lazy">
+        <h3>Польпетте из креветок под сливочным соусом</h3>
+        <p class="weight">280 г</p>
+        <p class="price">900 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="fish">
+        <img src="img/menu/dish.jpg" alt="Треска" loading="lazy">
+        <h3>Угольная треска с чёрным ризотто</h3>
+        <p class="weight">320 г</p>
+        <p class="price">1 300 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="fish">
+        <img src="img/menu/dish.jpg" alt="Лосось" loading="lazy">
+        <h3>Филе лосося на подушке из овощей</h3>
+        <p class="weight">210 г</p>
+        <p class="price">1 600 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="fish">
+        <img src="img/menu/dish.jpg" alt="Судак" loading="lazy">
+        <h3>Филе судака с цветной капустой</h3>
+        <p class="weight">290 г</p>
+        <p class="price">950 ₽</p>
+    </div>
+
+    <!-- ===== МАНГАЛ ===== -->
+    <div class="menu-item" data-category="mangal">
+        <img src="img/menu/dish.jpg" alt="Шашлык курица" loading="lazy">
+        <h3>Шашлык из куриного бедра</h3>
+        <p class="weight">200 г</p>
+        <p class="price">600 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="mangal">
+        <img src="img/menu/dish.jpg" alt="Шашлык свинина" loading="lazy">
+        <h3>Шашлык из свиной шеи</h3>
+        <p class="weight">200 г</p>
+        <p class="price">650 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="mangal">
+        <img src="img/menu/dish.jpg" alt="Люля курица" loading="lazy">
+        <h3>Люля-кебаб из курицы и индейки</h3>
+        <p class="weight">200 г</p>
+        <p class="price">600 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="mangal">
+        <img src="img/menu/dish.jpg" alt="Люля мясо" loading="lazy">
+        <h3>Люля-кебаб из свинины и говядины</h3>
+        <p class="weight">200 г</p>
+        <p class="price">700 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="mangal">
+        <img src="img/menu/dish.jpg" alt="Дорадо" loading="lazy">
+        <h3>Дорадо</h3>
+        <p class="weight">280 г</p>
+        <p class="price">1 100 ₽</p>
+    </div>
+
+    <!-- ===== СТЕЙКИ ===== -->
+    <div class="menu-item" data-category="steaks">
+        <img src="img/menu/dish.jpg" alt="Миньон" loading="lazy">
+        <h3>Филе Миньон</h3>
+        <p class="weight">300 г</p>
+        <p class="price">1 800 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="steaks">
+        <img src="img/menu/dish.jpg" alt="Стриплойн" loading="lazy">
+        <h3>Стейк Стриплойн</h3>
+        <p class="weight">300 г</p>
+        <p class="price">1 600 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="steaks">
+        <img src="img/menu/dish.jpg" alt="Рибай" loading="lazy">
+        <h3>Стейк Рибай</h3>
+        <p class="weight">300 г</p>
+        <p class="price">1 800 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="steaks">
+        <img src="img/menu/dish.jpg" alt="Мясника" loading="lazy">
+        <h3>Стейк Мясника</h3>
+        <p class="weight">300 г</p>
+        <p class="price">1 600 ₽</p>
+    </div>
+
+    <!-- ===== ДЕТСКОЕ МЕНЮ ===== -->
+    <div class="menu-item" data-category="kids">
+        <img src="img/menu/dish.jpg" alt="Суп куриный" loading="lazy">
+        <h3>Суп куриный с лапшой</h3>
+        <p class="weight">250 мл</p>
+        <p class="price">300 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="kids">
+        <img src="img/menu/dish.jpg" alt="Фрикадельки" loading="lazy">
+        <h3>Куриные фрикадельки</h3>
+        <p class="weight">120 г</p>
+        <p class="price">300 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="kids">
+        <img src="img/menu/dish.jpg" alt="Спагетти" loading="lazy">
+        <h3>Спагетти с сосисками</h3>
+        <p class="weight">250 г</p>
+        <p class="price">450 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="kids">
+        <img src="img/menu/dish.jpg" alt="Нагетсы" loading="lazy">
+        <h3>Куриные нагетсы</h3>
+        <p class="weight">140 г</p>
+        <p class="price">350 ₽</p>
+    </div>
+
+    <!-- ===== ДЕСЕРТЫ ===== -->
+    <div class="menu-item" data-category="desserts">
+        <img src="img/menu/dish.jpg" alt="Тарталетка" loading="lazy">
+        <h3>Тарталетка лимонная с меренгой</h3>
+        <p class="weight">1 шт</p>
+        <p class="price">350 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="desserts">
+        <img src="img/menu/dish.jpg" alt="Три шоколада" loading="lazy">
+        <h3>Мусс Три шоколада</h3>
+        <p class="weight">1 шт</p>
+        <p class="price">350 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="desserts">
+        <img src="img/menu/dish.jpg" alt="Тыковка" loading="lazy">
+        <h3>Мусс Тыковка</h3>
+        <p class="weight">1 шт</p>
+        <p class="price">350 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="desserts">
+        <img src="img/menu/dish.jpg" alt="Белый кролик" loading="lazy">
+        <h3>Пирожное Белый кролик</h3>
+        <p class="weight">1 шт</p>
+        <p class="price">400 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="desserts">
+        <img src="img/menu/dish.jpg" alt="Морковное" loading="lazy">
+        <h3>Пирожное Морковное</h3>
+        <p class="weight">1 шт</p>
+        <p class="price">500 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="desserts">
+        <img src="img/menu/dish.jpg" alt="Экзотик" loading="lazy">
+        <h3>Экзотик</h3>
+        <p class="weight">1 шт</p>
+        <p class="price">420 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="desserts">
+        <img src="img/menu/dish.jpg" alt="Наполеон" loading="lazy">
+        <h3>Наполеон</h3>
+        <p class="weight">1 шт</p>
+        <p class="price">500 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="desserts">
+        <img src="img/menu/dish.jpg" alt="Шоколадно-фисташковое" loading="lazy">
+        <h3>Пирожное Шоколадно-фисташковое</h3>
+        <p class="weight">1 шт</p>
+        <p class="price">420 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="desserts">
+        <img src="img/menu/dish.jpg" alt="Мороженое" loading="lazy">
+        <h3>Мороженое в ассортименте</h3>
+        <p class="weight">1 шт</p>
+        <p class="price">150 ₽</p>
+    </div>
+
+    <!-- ===== ГАРНИРЫ (150 г) ===== -->
+    <div class="menu-item" data-category="garnishes">
+        <img src="img/menu/dish.jpg" alt="Пюре" loading="lazy">
+        <h3>Картофельное пюре</h3>
+        <p class="weight">150 г</p>
+        <p class="price">250 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="garnishes">
+        <img src="img/menu/dish.jpg" alt="Цветная капуста" loading="lazy">
+        <h3>Запечённая цветная капуста</h3>
+        <p class="weight">150 г</p>
+        <p class="price">450 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="garnishes">
+        <img src="img/menu/dish.jpg" alt="Овощи гриль" loading="lazy">
+        <h3>Овощи гриль</h3>
+        <p class="weight">150 г</p>
+        <p class="price">450 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="garnishes">
+        <img src="img/menu/dish.jpg" alt="Рис" loading="lazy">
+        <h3>Рис жасмин</h3>
+        <p class="weight">150 г</p>
+        <p class="price">450 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="garnishes">
+        <img src="img/menu/dish.jpg" alt="Картофель фри" loading="lazy">
+        <h3>Картофель фри</h3>
+        <p class="weight">150 г</p>
+        <p class="price">250 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="garnishes">
+        <img src="img/menu/dish.jpg" alt="По-деревенски" loading="lazy">
+        <h3>Картофель по-деревенски</h3>
+        <p class="weight">150 г</p>
+        <p class="price">250 ₽</p>
+    </div>
+
+    <!-- ===== СОУСЫ (50 г) ===== -->
+    <div class="menu-item" data-category="sauces">
+        <img src="img/menu/dish.jpg" alt="Кетчуп" loading="lazy">
+        <h3>Кетчуп</h3>
+        <p class="weight">50 г</p>
+        <p class="price">100 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="sauces">
+        <img src="img/menu/dish.jpg" alt="Аджика" loading="lazy">
+        <h3>Аджика</h3>
+        <p class="weight">50 г</p>
+        <p class="price">100 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="sauces">
+        <img src="img/menu/dish.jpg" alt="Барбекю" loading="lazy">
+        <h3>Барбекю</h3>
+        <p class="weight">50 г</p>
+        <p class="price">150 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="sauces">
+        <img src="img/menu/dish.jpg" alt="Субис" loading="lazy">
+        <h3>Субис луковый</h3>
+        <p class="weight">50 г</p>
+        <p class="price">150 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="sauces">
+        <img src="img/menu/dish.jpg" alt="Сырный" loading="lazy">
+        <h3>Сырный</h3>
+        <p class="weight">50 г</p>
+        <p class="price">150 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="sauces">
+        <img src="img/menu/dish.jpg" alt="Тар-тар" loading="lazy">
+        <h3>Тар-тар</h3>
+        <p class="weight">50 г</p>
+        <p class="price">150 ₽</p>
+    </div>
+
+    <!-- ===== БЕЗАЛКОГОЛЬНЫЕ НАПИТКИ ===== -->
+    <div class="menu-item" data-category="soft-drinks">
+        <img src="img/menu/dish.jpg" alt="Аква" loading="lazy">
+        <h3>Аква минерале (б/г, с/г)</h3>
+        <p class="weight">260 мл</p>
+        <p class="price">220 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="soft-drinks">
+        <img src="img/menu/dish.jpg" alt="Кола" loading="lazy">
+        <h3>Эвервесс Кола</h3>
+        <p class="weight">250 мл</p>
+        <p class="price">250 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="soft-drinks">
+        <img src="img/menu/dish.jpg" alt="Кола без сахара" loading="lazy">
+        <h3>Эвервесс Кола без сахара</h3>
+        <p class="weight">250 мл</p>
+        <p class="price">300 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="soft-drinks">
+        <img src="img/menu/dish.jpg" alt="Апельсин" loading="lazy">
+        <h3>Эвервесс Апельсин</h3>
+        <p class="weight">250 мл</p>
+        <p class="price">250 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="soft-drinks">
+        <img src="img/menu/dish.jpg" alt="Севен Ап" loading="lazy">
+        <h3>Эвервесс Севен Ап</h3>
+        <p class="weight">250 мл</p>
+        <p class="price">250 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="soft-drinks">
+        <img src="img/menu/dish.jpg" alt="Тоник" loading="lazy">
+        <h3>Эвервесс Тоник</h3>
+        <p class="weight">250 мл</p>
+        <p class="price">250 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="soft-drinks">
+        <img src="img/menu/dish.jpg" alt="Ред Булл" loading="lazy">
+        <h3>Ред Булл / Адреналин Раш</h3>
+        <p class="weight">250 мл</p>
+        <p class="price">300 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="soft-drinks">
+        <img src="img/menu/dish.jpg" alt="Сок" loading="lazy">
+        <h3>Сок в ассортименте</h3>
+        <p class="weight">200 мл</p>
+        <p class="price">170 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="soft-drinks">
+        <img src="img/menu/dish.jpg" alt="Джермук" loading="lazy">
+        <h3>Джермук</h3>
+        <p class="weight">200 мл</p>
+        <p class="price">350 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="soft-drinks">
+        <img src="img/menu/dish.jpg" alt="Лимонад Малина" loading="lazy">
+        <h3>Авторский лимонад Малина-Базилик</h3>
+        <p class="weight">450 мл</p>
+        <p class="price">450 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="soft-drinks">
+        <img src="img/menu/dish.jpg" alt="Лимонад Киви" loading="lazy">
+        <h3>Авторский лимонад Киви-Яблоко</h3>
+        <p class="weight">450 мл</p>
+        <p class="price">450 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="soft-drinks">
+        <img src="img/menu/dish.jpg" alt="Лимонад Клубника" loading="lazy">
+        <h3>Авторский лимонад Клубника-Маракуйя</h3>
+        <p class="weight">450 мл</p>
+        <p class="price">450 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="soft-drinks">
+        <img src="img/menu/dish.jpg" alt="Мохито б/а" loading="lazy">
+        <h3>Мохито безалкогольный</h3>
+        <p class="weight">450 мл</p>
+        <p class="price">450 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="soft-drinks">
+        <img src="img/menu/dish.jpg" alt="Чай Жасмин-Груша" loading="lazy">
+        <h3>Азиатский чай Жасмин-Груша</h3>
+        <p class="weight">400 мл</p>
+        <p class="price">400 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="soft-drinks">
+        <img src="img/menu/dish.jpg" alt="Чай Жасмин-Клубника" loading="lazy">
+        <h3>Азиатский чай Жасмин-Клубника</h3>
+        <p class="weight">400 мл</p>
+        <p class="price">400 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="soft-drinks">
+        <img src="img/menu/dish.jpg" alt="Чай Ромашка-Яблоко" loading="lazy">
+        <h3>Азиатский чай Ромашка-Яблоко</h3>
+        <p class="weight">400 мл</p>
+        <p class="price">400 ₽</p>
+    </div>
+
+    <!-- ===== АВТОРСКИЙ ЧАЙ 900 мл ===== -->
+    <div class="menu-item" data-category="author-tea">
+        <img src="img/menu/dish.jpg" alt="Манго с перцем" loading="lazy">
+        <h3>Манго с перцем</h3>
+        <p class="weight">900 мл</p>
+        <p class="price">850 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="author-tea">
+        <img src="img/menu/dish.jpg" alt="Облепиха-имбирь" loading="lazy">
+        <h3>Облепиха-имбирь</h3>
+        <p class="weight">900 мл</p>
+        <p class="price">850 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="author-tea">
+        <img src="img/menu/dish.jpg" alt="Ананас-лемонграсс" loading="lazy">
+        <h3>Ананас-лемонграсс</h3>
+        <p class="weight">900 мл</p>
+        <p class="price">850 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="author-tea">
+        <img src="img/menu/dish.jpg" alt="Малина-розмарин" loading="lazy">
+        <h3>Малина-розмарин</h3>
+        <p class="weight">900 мл</p>
+        <p class="price">850 ₽</p>
+    </div>
+
+    <!-- ===== ЛИСТОВОЙ ЧАЙ 500 мл ===== -->
+    <div class="menu-item" data-category="leaf-tea">
+        <img src="img/menu/dish.jpg" alt="Сенча" loading="lazy">
+        <h3>Сенча (зелёный)</h3>
+        <p class="weight">500 мл</p>
+        <p class="price">350 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="leaf-tea">
+        <img src="img/menu/dish.jpg" alt="Альпийские травы" loading="lazy">
+        <h3>Альпийские травы (зелёный)</h3>
+        <p class="weight">500 мл</p>
+        <p class="price">350 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="leaf-tea">
+        <img src="img/menu/dish.jpg" alt="Жасмин" loading="lazy">
+        <h3>Китайский жасмин (зелёный)</h3>
+        <p class="weight">500 мл</p>
+        <p class="price">350 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="leaf-tea">
+        <img src="img/menu/dish.jpg" alt="Молочный улун" loading="lazy">
+        <h3>Молочный улун (зелёный)</h3>
+        <p class="weight">500 мл</p>
+        <p class="price">420 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="leaf-tea">
+        <img src="img/menu/dish.jpg" alt="Ассам" loading="lazy">
+        <h3>Ассам Пхулбари (чёрный)</h3>
+        <p class="weight">500 мл</p>
+        <p class="price">350 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="leaf-tea">
+        <img src="img/menu/dish.jpg" alt="Эрл Грей" loading="lazy">
+        <h3>Эрл Грей Классик (чёрный)</h3>
+        <p class="weight">500 мл</p>
+        <p class="price">350 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="leaf-tea">
+        <img src="img/menu/dish.jpg" alt="Пуэр" loading="lazy">
+        <h3>Императорский Пуэр</h3>
+        <p class="weight">500 мл</p>
+        <p class="price">380 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="leaf-tea">
+        <img src="img/menu/dish.jpg" alt="Ягодный чай" loading="lazy">
+        <h3>Ягодный чай (на основе чёрного)</h3>
+        <p class="weight">500 мл</p>
+        <p class="price">420 ₽</p>
+    </div>
+
+    <!-- ===== КОФЕ ===== -->
+    <div class="menu-item" data-category="coffee">
+        <img src="img/menu/dish.jpg" alt="Эспрессо" loading="lazy">
+        <h3>Эспрессо</h3>
+        <p class="weight">30 мл</p>
+        <p class="price">150 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="coffee">
+        <img src="img/menu/dish.jpg" alt="Двойной эспрессо" loading="lazy">
+        <h3>Двойной эспрессо</h3>
+        <p class="weight">60 мл</p>
+        <p class="price">200 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="coffee">
+        <img src="img/menu/dish.jpg" alt="Американо" loading="lazy">
+        <h3>Американо</h3>
+        <p class="weight">150 мл</p>
+        <p class="price">190 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="coffee">
+        <img src="img/menu/dish.jpg" alt="Капучино" loading="lazy">
+        <h3>Капучино</h3>
+        <p class="weight">200 мл</p>
+        <p class="price">250 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="coffee">
+        <img src="img/menu/dish.jpg" alt="Латте" loading="lazy">
+        <h3>Латте</h3>
+        <p class="weight">250 мл</p>
+        <p class="price">280 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="coffee">
+        <img src="img/menu/dish.jpg" alt="Раф" loading="lazy">
+        <h3>Раф кофе</h3>
+        <p class="weight">250 мл</p>
+        <p class="price">320 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="coffee">
+        <img src="img/menu/dish.jpg" alt="Айс латте" loading="lazy">
+        <h3>Айс латте (сироп на выбор)</h3>
+        <p class="weight">300 мл</p>
+        <p class="price">370 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="coffee">
+        <img src="img/menu/dish.jpg" alt="Какао" loading="lazy">
+        <h3>Какао с маршмеллоу</h3>
+        <p class="weight">250 мл</p>
+        <p class="price">320 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="coffee">
+        <img src="img/menu/dish.jpg" alt="Сиропы" loading="lazy">
+        <h3>Сиропы (карамель, миндаль, кокос, вишня, банан, лаванда, клубника, малина)</h3>
+        <p class="weight">20 мл</p>
+        <p class="price">60 ₽</p>
+    </div>
+
+    <!-- ===== МОЛОЧНЫЕ КОКТЕЙЛИ И СМУЗИ ===== -->
+    <div class="menu-item" data-category="milkshakes">
+        <img src="img/menu/dish.jpg" alt="Молочный коктейль" loading="lazy">
+        <h3>Молочный коктейль (банан + сироп)</h3>
+        <p class="weight">250 мл</p>
+        <p class="price">420 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="milkshakes">
+        <img src="img/menu/dish.jpg" alt="Коктейль со сладостями" loading="lazy">
+        <h3>Молочный коктейль со сладостями</h3>
+        <p class="weight">250 мл</p>
+        <p class="price">680 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="milkshakes">
+        <img src="img/menu/dish.jpg" alt="Манго шейк" loading="lazy">
+        <h3>Манго шейк</h3>
+        <p class="weight">250 мл</p>
+        <p class="price">620 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="milkshakes">
+        <img src="img/menu/dish.jpg" alt="Ягодный смузи" loading="lazy">
+        <h3>Ягодный смузи</h3>
+        <p class="weight">400 мл</p>
+        <p class="price">550 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="milkshakes">
+        <img src="img/menu/dish.jpg" alt="Фруктовый смузи" loading="lazy">
+        <h3>Фруктовый смузи</h3>
+        <p class="weight">400 мл</p>
+        <p class="price">550 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="milkshakes">
+        <img src="img/menu/dish.jpg" alt="Яблочный фреш" loading="lazy">
+        <h3>Яблочный фреш</h3>
+        <p class="weight">200 мл</p>
+        <p class="price">350 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="milkshakes">
+        <img src="img/menu/dish.jpg" alt="Апельсиновый фреш" loading="lazy">
+        <h3>Апельсиновый фреш</h3>
+        <p class="weight">200 мл</p>
+        <p class="price">380 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="milkshakes">
+        <img src="img/menu/dish.jpg" alt="Грейпфрутовый фреш" loading="lazy">
+        <h3>Грейпфрутовый фреш</h3>
+        <p class="weight">200 мл</p>
+        <p class="price">380 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="milkshakes">
+        <img src="img/menu/dish.jpg" alt="Морковный фреш" loading="lazy">
+        <h3>Морковный фреш</h3>
+        <p class="weight">200 мл</p>
+        <p class="price">350 ₽</p>
+    </div>
+
+    <div class="menu-item" data-category="milkshakes">
+        <img src="img/menu/dish.jpg" alt="Сельдереевый фреш" loading="lazy">
+        <h3>Сельдереевый фреш</h3>
+        <p class="weight">200 мл</p>
+        <p class="price">370 ₽</p>
+    </div>
+    
+</div>
+
+    
     <section id="contacts">
         <h2>Контакты</h2>
         <p>Г. Щелково Пролетарский проспект, 10 </p>
-        <p>+7 (999) 123-45-67</p>
+        <p>+7 (909) 994-02-01</p>
         <div id="map"><!-- карта позже --></div>
     </section>
 
     <footer>
-        <p>© 2024 Ресторан «Название»</p>
+        <p>© 2026 Ресторан «Терраса»</p>
     </footer>
 
     <script src="js/script.js"></script>

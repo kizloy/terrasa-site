@@ -13,12 +13,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// ===== ПЕРЕВОРОТ КАРТОЧКИ МЕНЮ =====
-document.querySelectorAll('.menu-item').forEach(item => {
-    item.addEventListener('click', function() {
-        this.classList.toggle('flipped');
-    });
-});
 
 // ===== ФИЛЬТР МЕНЮ =====
 const tabBtns = document.querySelectorAll('.tab-btn');
