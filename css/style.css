@@ -411,6 +411,58 @@ section h2 {
     text-align: center;
 }
 
+/* Контакты — телефон */
+.contact-phone {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.contact-phone:hover {
+    text-decoration: underline;
+}
+
+/* Соцсети */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1.5rem 0;
+    flex-wrap: wrap;
+}
+
+.social-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.social-btn:hover {
+    transform: translateY(-3px);
+    opacity: 0.9;
+}
+
+.social-icon {
+    font-size: 1.2rem;
+}
+
+.social-btn.yandex {
+    background: #fc3f1d;
+    color: var(--white);
+}
+
+.social-btn.vk {
+    background: #0077ff;
+    color: var(--white);
+}
+
 footer {
     background: #111;
     color: #888;
