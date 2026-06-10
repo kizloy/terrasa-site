@@ -173,7 +173,7 @@ header nav a {
 /* ===== ФОН СЕКЦИИ МЕНЮ ===== */
 #menu {
     background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-                url('../img/menu-bg.jpeg') center/cover fixed no-repeat;
+                url('../img/bg-menu.webp') center/cover fixed no-repeat;
     padding-bottom: 4rem;
 }
 
@@ -221,7 +221,7 @@ section h2 {
 #events {
     padding: 4rem 1rem;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-                url('../img/events-bg.webp') center/cover fixed no-repeat;
+                url('../img/events-bg.jpeg') center/cover fixed no-repeat;
 }
 
 #events h2 {
