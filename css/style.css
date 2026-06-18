@@ -633,3 +633,8 @@ body.no-scroll {
     padding: 1rem 1rem 0;
     margin: 0;
 }
+
+/* Карточка без фото — компактная */
+.menu-item:not(:has(img)) {
+    padding: 0.8rem 1.2rem;
+}
